@@ -16,7 +16,14 @@ const config: Config = {
       fontFamily: {
         "Playfair Display": ["Playfair Display", "serif"],
         "work-sans": ["Work Sans", "block"],
-        "dm-serif-display": ["DM Serif Display"]
+        "dm-serif-display": ["DM Serif Display"],
+      },
+      colors: {
+        darkGreen: "#283618",
+        green: "#606C38",
+        offWhite: "#FEFAE0",
+        ocherYellow: "#DDA15E",
+        brown: "#BC6C25",
       },
     },
   },

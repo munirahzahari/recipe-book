@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,16 +20,17 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-        ></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <div>Footer</div>
+      </body>
     </html>
   );
 }
